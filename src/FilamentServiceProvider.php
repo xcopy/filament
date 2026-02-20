@@ -54,6 +54,7 @@ class FilamentServiceProvider extends PackageServiceProvider
     protected function registerFilamentTableMacros(): void
     {
         Table::macro('timestampColumns', function () {
+            /** @phpstan-ignore-next-line */
             $modelClass = $this->getModel();
             $model = new $modelClass;
             $columns = [];
@@ -67,6 +68,7 @@ class FilamentServiceProvider extends PackageServiceProvider
                 $columns[] = $model->getDeletedAtColumn();
             }
 
+            /** @phpstan-ignore-next-line */
             return $this->pushColumns(
                 collect($columns)
                     ->map(fn ($column) => TimestampColumn::make($column)->label(__(Str::headline($column))))
