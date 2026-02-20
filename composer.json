@@ -1,6 +1,6 @@
 {
     "name": "xcopy/filament",
-    "description": "",
+    "description": "Custom Filament components for forms, tables, and infolists with opinionated defaults for common use cases",
     "keywords": [
         "xcopy",
         "laravel",

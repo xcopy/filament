@@ -4,26 +4,35 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/xcopy/filament/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/xcopy/filament/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/xcopy/filament.svg?style=flat-square)](https://packagist.org/packages/xcopy/filament)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Custom Filament components for forms, tables, and infolists with opinionated defaults for common use cases.
+
+## Components
+
+### Forms
+`DescriptionTextarea`, `EmailInput`, `MoneyInput`, `NameInput`, `PasswordInput`
+
+### Tables
+`DescriptionColumn`, `EnumColumn`, `IdColumn`, `MoneyColumn`, `NameColumn`, `StateColumn`, `TimestampColumn`
+
+### Infolists
+`DescriptionEntry`, `EnumEntry`, `MoneyEntry`, `StateEntry`, `TimestampEntry`
 
 ## Installation
 
-You can install the package via composer:
+**Note:** This package is not yet available on Packagist. You must add it to your `composer.json` manually.
 
-```bash
-composer require xcopy/filament
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-views"
-```
-
-## Testing
-
-```bash
-composer test
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/xcopy/filament"
+        }
+    ],
+    "require": {
+        "xcopy/filament": "dev-main"
+    }
+}
 ```
 
 ## Changelog
