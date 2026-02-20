@@ -21,6 +21,7 @@
         "filament/infolists": "^5.2",
         "filament/tables": "^5.2",
         "illuminate/contracts": "^11.0||^12.0",
+        "illuminate/support": "*",
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
