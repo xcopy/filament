@@ -60,11 +60,14 @@ class FilamentServiceProvider extends PackageServiceProvider
             $columns = [];
 
             if ($model->usesTimestamps()) {
+                // __('Created At')
                 $columns[] = $model->getCreatedAtColumn();
+                // __('Updated At')
                 $columns[] = $model->getUpdatedAtColumn();
             }
 
             if (method_exists($modelClass, 'isSoftDeletable') && $modelClass::isSoftDeletable()) {
+                // __('Deleted At')
                 $columns[] = $model->getDeletedAtColumn();
             }
 
