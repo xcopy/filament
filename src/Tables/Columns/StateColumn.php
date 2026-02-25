@@ -20,5 +20,6 @@ class StateColumn extends EnumColumn
                 ? $state->color()
                 : 'gray'
         );
+        $this->sortable();
     }
 }
