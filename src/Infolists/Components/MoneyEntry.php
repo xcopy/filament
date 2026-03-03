@@ -9,7 +9,8 @@ class MoneyEntry extends TextEntry
     protected function setUp(): void
     {
         $this->money();
-        $this->placeholder('-');
+
+        $this->getPlaceholder() or $this->placeholder('—');
 
         parent::setUp();
     }

@@ -14,7 +14,8 @@ class DescriptionEntry extends TextEntry
     protected function setUp(): void
     {
         $this->label(__('Description'));
-        $this->placeholder('-');
+
+        $this->getPlaceholder() or $this->placeholder('—');
 
         parent::setUp();
     }

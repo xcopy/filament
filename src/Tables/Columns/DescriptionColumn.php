@@ -14,7 +14,8 @@ class DescriptionColumn extends TextColumn
     protected function setUp(): void
     {
         $this->label(__('Description'));
-        $this->placeholder('-');
         $this->searchable();
+
+        $this->getPlaceholder() or $this->placeholder('—');
     }
 }

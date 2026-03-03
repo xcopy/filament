@@ -9,7 +9,8 @@ class TimestampEntry extends TextEntry
     protected function setUp(): void
     {
         $this->dateTime();
-        $this->placeholder('-');
+
+        $this->getPlaceholder() or $this->placeholder('—');
 
         parent::setUp();
     }
