@@ -15,6 +15,7 @@ class EmailInput extends TextInput
     {
         $this->label(__('Email'));
         $this->email();
+        $this->inputMode('email');
 
         parent::setUp();
     }
