@@ -20,7 +20,7 @@ Custom Filament components for forms, tables, and infolists with opinionated def
 ## Installation
 
 ```
-composer require xcopy/filament
+composer require xcopy/filament:dev-main
 ```
 
 ## Changelog
