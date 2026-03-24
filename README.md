@@ -19,20 +19,8 @@ Custom Filament components for forms, tables, and infolists with opinionated def
 
 ## Installation
 
-**Note:** This package is not yet available on Packagist. You must add it to your `composer.json` manually.
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/xcopy/filament"
-        }
-    ],
-    "require": {
-        "xcopy/filament": "dev-main"
-    }
-}
+```
+composer require xcopy/filament
 ```
 
 ## Changelog
